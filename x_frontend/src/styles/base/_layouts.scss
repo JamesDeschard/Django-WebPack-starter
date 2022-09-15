@@ -1,0 +1,9 @@
+.container {
+  @include container;
+}
+
+@include mq(md) {
+  .container {
+    padding: 0;
+  }
+}

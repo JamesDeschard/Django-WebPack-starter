@@ -1,0 +1,67 @@
+@use "sass:map";
+
+/**
+ * Variables
+*/
+
+/* Typography */
+$primary-font-family: roboto, sans-serif;
+$secondary-font-family: roboto, sans-serif;
+
+$base-font-size: 16px;
+
+$base-line-height: 1.4;
+$heading-line-height: 1.2;
+
+$font-styles: (
+  title: (
+    size: 35px,
+    lh: $heading-line-height,
+    weight: 700,
+    ratio: 2,
+    bp: lg
+  ),
+  sub-title: (
+    size: 25px,
+    lh: $heading-line-height,
+    weight: 500,
+    ratio: 1.75,
+    bp: lg
+  ),
+
+);
+
+/* Breakpoints */
+$breakpoints: (
+  sm : 480px,
+  md : 768px,
+  lg : 1024px,
+  xl : 1280px,
+);
+
+/* Paths */
+
+/* Grid setup */
+$container-width: 1040px;
+$mobile-external-gutter: 20px;
+
+/* Colour palette */
+
+/* Use setColor function */
+$colors: (
+  black: (
+    base: #000
+  ),
+  white: (
+    base: #fff
+  ),
+  main: (
+    light: #63ccff,
+    base: #039be5,
+    dark: #006db3,
+  ),
+);
+
+
+/* Components */
+$loading-dimensions: 50px;

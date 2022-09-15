@@ -1,0 +1,37 @@
+{% extends 'base_templates/base.html' %}
+{% load static %}
+
+{% block content %}
+
+<div class="container">
+
+    <div class="title">
+        <h1>Welcome!</h1>
+        <h2>Django-Webpack Boilerplate</h2>
+    </div>
+
+    <picture class="introduction-image">
+        <img alt="Illustratory Image" class="lazyload"
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mM8IQkAAa8A48opxD0AAAAASUVORK5CYII="
+            data-srcset="{% static 'images/django.png' %} 1x, {% static 'images/django.png' %} 2x"/>
+    </picture>
+
+    <div class="introduction-text">
+        <p>
+            This boilerplate is a dependancy-free way of serving your Django static assets with webpack. It also comes
+            with the django-extensions package installed
+            (you will find a detailed explanation of the commands it offers in the commands_documentation.txt file located in
+            the root of the directory) as well as a great compilation of SCSS and JS utils (thanks to my good friend
+             <a href="https://github.com/Nkzq" target="_blank">Romain (Nkzq)</a> for setting me up with those).
+        </p>
+    </div>
+
+    <div class="introduction-close">
+        <p>
+            Happy Coding! 
+        </p>
+    </div>
+
+</div>
+
+{% endblock %}

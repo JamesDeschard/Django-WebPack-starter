@@ -1,0 +1,49 @@
+/* Core variables */
+@import 'vars/default';
+
+/* Import specifics files for this template (vars, components) */
+
+/* @import 'vars/index'; */
+
+@import 'app.scss';
+
+/* Introduction File */
+
+body{ 
+    background-color: setColor(black);
+    color: setColor(white);
+
+    .title h1, .title h2 {
+        @include justifyCenterCol;
+        @include fs(title);
+        @include mq(md){
+            margin: rem(50px) 0; 
+        };
+        text-align: center;
+        margin: rem(25px) 0;
+    }
+
+    .introduction-image {
+        @include justifyCenterRow;
+        img {
+            border-radius: 15px;
+        }
+    }
+
+    .introduction-text {
+        @include justifyCenterRow;  
+        @include mq(md){
+            font-size: rem($base-font-size * 1.5);
+            margin: rem(50px) 0; 
+        };
+        font-size: rem($base-font-size);
+        margin: rem(25px) 0; 
+    }
+
+    .introduction-close{
+        @include fs(sub-title);
+        @include justifyCenterRow;
+        text-align: center;
+        margin-bottom: rem(75px);
+    }
+}

@@ -1,0 +1,33 @@
+{% extends 'base_templates/frontend-base.html' %}
+{%load static%}
+{% block html %}
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" type="image/png" href="{% static 'favicon/favicon.ico' %}"/>
+  <title>New Project</title>
+
+  <!--Header Content JS(defer) and CSS links-->
+  
+  {% block css %}
+    {{ block.super }}
+  {% endblock %}
+</head>
+<body>
+
+{% block content %}
+
+<!--Website Content Here-->
+
+{% endblock %}
+
+{% block js %}
+  {{ block.super }}
+{% endblock %}
+
+</body>
+</html>
+{% endblock %}

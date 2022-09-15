@@ -9,7 +9,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 env = environ.Env()
 environ.Env.read_env(os.path.join(BASE_DIR, '.env'))
 
-SECRET_KEY = os.environ.get('SECRET_KEY') # x9u6=it^&$ik@l9xlftn!%qdokm3_n1f*o#289zyd1e&@mm-ab !!! Use your own secret key !!!
+SECRET_KEY = 'x9u6=it^&$ik@l9xlftn!%qdokm3_n1f*o#289zyd1e&@mm-ab' # !!! Use your own secret key !!!
 
 DEBUG = True
 
@@ -127,7 +127,7 @@ USE_TZ = True
 STATIC_URL = 'static/'
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'x_frontend', 'build'),
-    os.path.join(BASE_DIR, 'static_project_images')
+    os.path.join(BASE_DIR, 'x_static')
 ]
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
